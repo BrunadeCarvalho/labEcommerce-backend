@@ -16,6 +16,7 @@ export default async function listarCompras(
              `SELECT * FROM Labecommerce_purchases WHERE user_id=${userId}`
          )
          res.status(200).send(result[0])
+         
      }catch(error:any){
          console.log(error.message)
      }
