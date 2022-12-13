@@ -10,3 +10,6 @@ Content-Type: application/json
     "email": "salem@email.com",
     "password": "adoroficarnotelhado"
 }
+
+### // Get Products:
+GET http://localhost:3003/products 
