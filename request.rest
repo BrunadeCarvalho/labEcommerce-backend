@@ -33,3 +33,6 @@ Content-Type: application/json
     "product_id":"0.7094257946491156",
     "quantity": 2
 }
+
+### Lista de compras:
+GET http://localhost:3003/users/0/purchases
