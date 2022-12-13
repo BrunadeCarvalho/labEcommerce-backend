@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { connection } from "../data/connection";
 
-export default async function listarUsuarios(
+export default async function listaDeUsuarios(
     req: Request,
     res: Response
 ){

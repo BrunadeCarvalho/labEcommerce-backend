@@ -1,13 +1,17 @@
 import express from "express"
-
 import cors from 'cors'
 import { AddressInfo } from "net"
+import listaDeUsuarios from "./endpoint/listaDeUsuarios"
+import dotenv from "dotenv"
 
+dotenv.config()
 const app = express()
 
 app.use(express.json())
-
 app.use(cors())
+
+// Listando os usuários:
+app.get("/users", listaDeUsuarios)
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if(server){
