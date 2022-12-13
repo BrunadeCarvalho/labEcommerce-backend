@@ -6,6 +6,7 @@ import dotenv from "dotenv"
 import criarUsuario from "./endpoint/criarUsuario."
 import listarProdutos from "./endpoint/listaDeProdutos"
 import cadastrarProduto from "./endpoint/cadastrarProdutos"
+import registrarCompras from "./endpoint/registroDeCompras"
 
 dotenv.config()
 const app = express()
@@ -24,6 +25,9 @@ app.get("/products", listarProdutos);
 
 // Cadastrando produtos:
 app.post("/products", cadastrarProduto)
+
+// Registro de compra:
+app.post("/purchases", registrarCompras)
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if(server){

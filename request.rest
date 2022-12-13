@@ -23,3 +23,13 @@ Content-Type: application/json
     "price": 10.00,
     "image_url": "https://images.tcdn.com.br/img/img_prod/738124/melado_de_cana_vegano_caseiro_e_natural_300g_56378999_1_89de9590384fd5b3d364b84da365a338.jpg"
 }
+
+### // Registro de compras:
+POST http://localhost:3003/purchases
+Content-Type: application/json
+
+{
+    "user_id":"0",
+    "product_id":"0.7094257946491156",
+    "quantity": 2
+}
