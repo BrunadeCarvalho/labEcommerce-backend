@@ -4,6 +4,7 @@ import { AddressInfo } from "net"
 import listaDeUsuarios from "./endpoint/listaDeUsuarios"
 import dotenv from "dotenv"
 import criarUsuario from "./endpoint/criarUsuario."
+import listarProdutos from "./endpoint/listaDeProdutos"
 
 dotenv.config()
 const app = express()
@@ -16,6 +17,9 @@ app.get("/users", listaDeUsuarios);
 
 // criando um novo usuário:
 app.post("/users", criarUsuario);
+
+//listando os produtos:
+app.get("/products", listarProdutos);
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if(server){
