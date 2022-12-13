@@ -13,3 +13,13 @@ Content-Type: application/json
 
 ### // Get Products:
 GET http://localhost:3003/products 
+
+### // Create products:
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name":" Melado de cana 300g",
+    "price": 10.00,
+    "image_url": "https://images.tcdn.com.br/img/img_prod/738124/melado_de_cana_vegano_caseiro_e_natural_300g_56378999_1_89de9590384fd5b3d364b84da365a338.jpg"
+}
