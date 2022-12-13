@@ -66,7 +66,7 @@
 
 [Documentação](https://documenter.getpostman.com/view/22350736/2s8YzL5n6G)
 
-## Stack utilizada
+## Tecnologias utilizadas:
 <img src="https://skillicons.dev/icons?i=ts,nodejs, mysql," /> 
 <p>Express e Knex.</p>
 
